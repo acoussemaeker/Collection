@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CollectionModelStoreContainer" CdmEntityContainer="CollectionEntities">
+    <EntitySetMapping Name="Film">
+      <EntityTypeMapping TypeName="CollectionModel.Film">
+        <MappingFragment StoreEntitySet="Film">
+          <ScalarProperty Name="id_genre" ColumnName="id_genre" />
+          <ScalarProperty Name="Pays_origin" ColumnName="Pays_origin" />
+          <ScalarProperty Name="Date_sortie" ColumnName="Date_sortie" />
+          <ScalarProperty Name="realisateur" ColumnName="realisateur" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenreFilm">
+      <EntityTypeMapping TypeName="CollectionModel.GenreFilm">
+        <MappingFragment StoreEntitySet="GenreFilm">
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenreJeux">
+      <EntityTypeMapping TypeName="CollectionModel.GenreJeux">
+        <MappingFragment StoreEntitySet="GenreJeux">
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GenreLivre">
+      <EntityTypeMapping TypeName="CollectionModel.GenreLivre">
+        <MappingFragment StoreEntitySet="GenreLivre">
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jeux">
+      <EntityTypeMapping TypeName="CollectionModel.Jeux">
+        <MappingFragment StoreEntitySet="Jeux">
+          <ScalarProperty Name="id_genre" ColumnName="id_genre" />
+          <ScalarProperty Name="Editeur" ColumnName="Editeur" />
+          <ScalarProperty Name="Date_sortie" ColumnName="Date_sortie" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Livre">
+      <EntityTypeMapping TypeName="CollectionModel.Livre">
+        <MappingFragment StoreEntitySet="Livre">
+          <ScalarProperty Name="id_genre" ColumnName="id_genre" />
+          <ScalarProperty Name="nbpage" ColumnName="nbpage" />
+          <ScalarProperty Name="premiere_parrution" ColumnName="premiere_parrution" />
+          <ScalarProperty Name="editeur" ColumnName="editeur" />
+          <ScalarProperty Name="auteur" ColumnName="auteur" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supportfilm">
+      <EntityTypeMapping TypeName="CollectionModel.Supportfilm">
+        <MappingFragment StoreEntitySet="Supportfilm">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supportjeux">
+      <EntityTypeMapping TypeName="CollectionModel.Supportjeux">
+        <MappingFragment StoreEntitySet="Supportjeux">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supportlivre">
+      <EntityTypeMapping TypeName="CollectionModel.Supportlivre">
+        <MappingFragment StoreEntitySet="Supportlivre">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateur">
+      <EntityTypeMapping TypeName="CollectionModel.Utilisateur">
+        <MappingFragment StoreEntitySet="Utilisateur">
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="codepostal" ColumnName="codepostal" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="utilisateurFilmSupport">
+      <EntityTypeMapping TypeName="CollectionModel.utilisateurFilmSupport">
+        <MappingFragment StoreEntitySet="utilisateurFilmSupport">
+          <ScalarProperty Name="SupportFilmID" ColumnName="SupportFilmID" />
+          <ScalarProperty Name="FilmID" ColumnName="FilmID" />
+          <ScalarProperty Name="utilisateurID" ColumnName="utilisateurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurJeuxSupport">
+      <EntityTypeMapping TypeName="CollectionModel.UtilisateurJeuxSupport">
+        <MappingFragment StoreEntitySet="UtilisateurJeuxSupport">
+          <ScalarProperty Name="SupportJeuxID" ColumnName="SupportJeuxID" />
+          <ScalarProperty Name="JeuxID" ColumnName="JeuxID" />
+          <ScalarProperty Name="UtilisateurID" ColumnName="UtilisateurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UtilisateurLivreSupport">
+      <EntityTypeMapping TypeName="CollectionModel.UtilisateurLivreSupport">
+        <MappingFragment StoreEntitySet="UtilisateurLivreSupport">
+          <ScalarProperty Name="SupportLivreID" ColumnName="SupportLivreID" />
+          <ScalarProperty Name="LivreID" ColumnName="LivreID" />
+          <ScalarProperty Name="UtilisateurID" ColumnName="UtilisateurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

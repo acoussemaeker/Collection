@@ -1,0 +1,11 @@
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.csprojResolveAssemblyReference.cache
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr.epsi.group.multitech.dataAccess.dll.config
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr.epsi.group.multitech.dataAccess.dll
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr.epsi.group.multitech.dataAccess.pdb
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.dll
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.xml
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.dll
+C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.pdb
