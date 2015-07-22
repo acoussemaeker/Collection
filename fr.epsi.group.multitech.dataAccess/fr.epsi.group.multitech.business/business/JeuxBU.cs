@@ -13,6 +13,7 @@ namespace fr.epsi.group.multitech.dataAccess
         string description;
         DateTime dateSortie;
         string editeur;
+        int genreid;
 
         public JeuxBU(Jeux jeux)
         {
@@ -23,12 +24,13 @@ namespace fr.epsi.group.multitech.dataAccess
             this.editeur = jeux.editeur;
         }
 
-        public JeuxBU(string nom, string description, DateTime dateSortie, string editeur)
+        public JeuxBU(string nom, string description, DateTime dateSortie, string editeur, int genreid)
         {
             this.nom = nom;
             this.description = description;
             this.dateSortie = dateSortie;
             this.editeur = editeur;
+            this.genreid = genreid;
         }
 
         public Jeux GetModel()
@@ -40,7 +42,7 @@ namespace fr.epsi.group.multitech.dataAccess
             _result.description = this.description;
             _result.dateSortie = this.dateSortie;
             _result.editeur = this.editeur;
-            _result.idGenre = 1;
+            _result.idGenre = this.genreid;
 
             return _result;
         }

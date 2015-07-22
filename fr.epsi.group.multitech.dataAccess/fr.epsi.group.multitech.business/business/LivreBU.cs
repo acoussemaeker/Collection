@@ -15,6 +15,7 @@ namespace fr.epsi.group.multitech.dataAccess
         string editeur;
         DateTime premiereParrution;
         int nbPage;
+        int genreid;
 
         public LivreBU(Livre livre)
         {
@@ -27,7 +28,7 @@ namespace fr.epsi.group.multitech.dataAccess
             this.nbPage = livre.nbpage;
         }
 
-        public LivreBU(string nom, string description, string auteur, string editeur, DateTime premiereParrution, int nbPage)
+        public LivreBU(string nom, string description, string auteur, string editeur, DateTime premiereParrution, int nbPage, int genreid)
         {
             this.nom = nom;
             this.description = description;
@@ -35,6 +36,7 @@ namespace fr.epsi.group.multitech.dataAccess
             this.editeur = editeur;
             this.premiereParrution = premiereParrution;
             this.nbPage = nbPage;
+            this.genreid = genreid;
         }
 
         public Livre GetModel()
@@ -48,7 +50,7 @@ namespace fr.epsi.group.multitech.dataAccess
             _result.editeur = this.editeur;
             _result.premiereParrution = this.premiereParrution;
             _result.nbpage = this.nbPage;
-            _result.idGenre = 1;
+            _result.idGenre = this.genreid;
 
             return _result;
         }

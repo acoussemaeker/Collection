@@ -14,6 +14,7 @@ namespace fr.epsi.group.multitech.dataAccess
         string realisateur;
         DateTime dateSortie;
         string paysOrigine;
+        int genreid;
 
         public FilmBU(Film film)
         {
@@ -25,13 +26,14 @@ namespace fr.epsi.group.multitech.dataAccess
             this.paysOrigine = film.paysOrigine;
         }
 
-        public FilmBU(string nom, string description, string realisateur, DateTime dateSortie, string paysOrigine)
+        public FilmBU(string nom, string description, string realisateur, DateTime dateSortie, string paysOrigine, int genreid)
         {
             this.nom = nom;
             this.description = description;
             this.realisateur = realisateur;
             this.dateSortie = dateSortie;
             this.paysOrigine = paysOrigine;
+            this.genreid = genreid;
         }
 
         public Film GetModel()
@@ -44,7 +46,7 @@ namespace fr.epsi.group.multitech.dataAccess
             _result.realisateur = this.realisateur;
             _result.dateSortie = this.dateSortie;
             _result.paysOrigine = this.paysOrigine;
-            _result.idGenre = 1;
+            _result.idGenre = this.genreid;
 
             return _result;
         }
