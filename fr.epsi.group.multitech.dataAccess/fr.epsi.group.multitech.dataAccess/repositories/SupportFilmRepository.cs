@@ -65,36 +65,6 @@ namespace fr.epsi.group.multitech.dataAccess.repositories
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-
-        public IEnumerable<Supportfilm> GetSupportfilm()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Supportlivre> GetSupportFilm()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Supportlivre GetSupportFilmByID(int SupportFilmId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertSupportFilm(Supportlivre film)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DeleteSupportFilm(int filmId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateSupportFilm(Supportlivre film)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
 

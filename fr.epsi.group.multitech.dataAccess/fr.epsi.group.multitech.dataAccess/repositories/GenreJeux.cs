@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace fr.epsi.group.multitech.dataAccess.repositories
 {
-    class GenreJeux : IGenreJeux, IDisposable
+    class GenreJeuxRepository : IGenreJeux, IDisposable
     {
         private CollectionEntities context;
         private bool disposed = false;
 
-        public GenreJeux(CollectionEntities context)
+        public GenreJeuxRepository(CollectionEntities context)
         {
             this.context = context;
         }

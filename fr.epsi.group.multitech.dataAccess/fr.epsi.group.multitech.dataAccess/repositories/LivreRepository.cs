@@ -11,7 +11,7 @@ namespace fr.epsi.group.multitech.dataAccess.repositories
     {
         private CollectionEntities context;
         private bool disposed = false;
-        
+
         public LivreRepository(CollectionEntities context)
         {
             this.context = context;
@@ -64,11 +64,6 @@ namespace fr.epsi.group.multitech.dataAccess.repositories
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
-
-        public IEnumerable<Livre> GetLivre()
-        {
-            throw new NotImplementedException();
         }
     }
 }

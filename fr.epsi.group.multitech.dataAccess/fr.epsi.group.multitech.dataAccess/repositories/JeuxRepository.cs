@@ -65,11 +65,6 @@ namespace fr.epsi.group.multitech.dataAccess.repositories
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-
-        public IEnumerable<Jeux> GetJeux()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
 

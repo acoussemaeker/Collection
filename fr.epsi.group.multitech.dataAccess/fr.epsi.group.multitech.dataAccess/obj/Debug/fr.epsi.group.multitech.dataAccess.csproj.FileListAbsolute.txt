@@ -9,3 +9,5 @@ C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.da
 C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr\EntityFramework.resources.dll
 C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.dll
 C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.pdb
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.csprojResolveAssemblyReference.cache
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.csprojFakesResolveAssemblyReference.cache

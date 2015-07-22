@@ -65,35 +65,5 @@ namespace fr.epsi.group.multitech.dataAccess.repositories
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-
-        public IEnumerable<Supportjeux> GetSupportjeux()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Supportlivre> GetSupportJeux()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Supportlivre GetSupportJeuxByID(int SupportJeuxId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertSupportJeux(Supportlivre jeux)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DeleteSupportJeux(int jeuxId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void UpdateSupportJeux(Supportlivre jeux)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
