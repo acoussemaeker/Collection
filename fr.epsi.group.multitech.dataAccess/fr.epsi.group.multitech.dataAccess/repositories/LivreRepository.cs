@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace fr.epsi.group.multitech.dataAccess.repositories
 {
-    public class LivreRepository : ILivreRepository, IDisposable
+    public class LivreRepository : IDisposable
     {
         private CollectionEntities context;
         private bool disposed = false;

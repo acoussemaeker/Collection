@@ -1,0 +1,12 @@
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\obj\Debug\fr.epsi.group.multitech.business.csprojResolveAssemblyReference.cache
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\fr.epsi.group.multitech.business.exe.config
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\fr.epsi.group.multitech.business.exe
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\fr.epsi.group.multitech.business.pdb
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\EntityFramework.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\fr.epsi.group.multitech.dataAccess.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\fr.epsi.group.multitech.dataAccess.pdb
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\EntityFramework.xml
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\obj\Debug\fr.epsi.group.multitech.business.exe
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.business\obj\Debug\fr.epsi.group.multitech.business.pdb

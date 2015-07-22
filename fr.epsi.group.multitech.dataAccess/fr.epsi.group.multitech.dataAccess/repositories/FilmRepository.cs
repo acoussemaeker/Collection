@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace fr.epsi.group.multitech.dataAccess.repositories
 {
-    public class FilmRepository : IFilmRepository, IDisposable
+    public class FilmRepository : IDisposable
     {
         private CollectionEntities context;
         private bool disposed = false;

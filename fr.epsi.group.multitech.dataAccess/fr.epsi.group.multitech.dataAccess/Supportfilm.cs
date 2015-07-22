@@ -16,12 +16,12 @@ namespace fr.epsi.group.multitech.dataAccess
     {
         public Supportfilm()
         {
-            this.utilisateurFilmSupport = new HashSet<utilisateurFilmSupport>();
+            this.UtilisateurFilmSupport = new HashSet<UtilisateurFilmSupport>();
         }
     
         public int id { get; set; }
         public string type { get; set; }
     
-        public virtual ICollection<utilisateurFilmSupport> utilisateurFilmSupport { get; set; }
+        public virtual ICollection<UtilisateurFilmSupport> UtilisateurFilmSupport { get; set; }
     }
 }

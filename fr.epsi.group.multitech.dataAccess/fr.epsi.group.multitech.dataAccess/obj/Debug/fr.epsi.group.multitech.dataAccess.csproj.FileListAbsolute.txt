@@ -9,5 +9,15 @@ C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.da
 C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr\EntityFramework.resources.dll
 C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.dll
 C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.pdb
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr.epsi.group.multitech.dataAccess.dll.config
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr.epsi.group.multitech.dataAccess.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr.epsi.group.multitech.dataAccess.pdb
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.xml
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\bin\Debug\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.dll
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.pdb
 D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.csprojResolveAssemblyReference.cache
-D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\obj\Debug\fr.epsi.group.multitech.dataAccess.csprojFakesResolveAssemblyReference.cache

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace fr.epsi.group.multitech.dataAccess.repositories
 {
-    class GenreLivreRepository: IGenreLivre, IDisposable
+    class GenreLivreRepository:  IDisposable
     {
         private CollectionEntities context;
         private bool disposed = false;

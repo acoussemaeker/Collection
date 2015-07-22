@@ -35,7 +35,7 @@ namespace fr.epsi.group.multitech.dataAccess
         public virtual DbSet<Supportjeux> Supportjeux { get; set; }
         public virtual DbSet<Supportlivre> Supportlivre { get; set; }
         public virtual DbSet<Utilisateur> Utilisateur { get; set; }
-        public virtual DbSet<utilisateurFilmSupport> utilisateurFilmSupport { get; set; }
+        public virtual DbSet<UtilisateurFilmSupport> UtilisateurFilmSupport { get; set; }
         public virtual DbSet<UtilisateurJeuxSupport> UtilisateurJeuxSupport { get; set; }
         public virtual DbSet<UtilisateurLivreSupport> UtilisateurLivreSupport { get; set; }
     }

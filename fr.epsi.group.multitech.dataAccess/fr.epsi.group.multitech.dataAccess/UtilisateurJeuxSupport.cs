@@ -14,9 +14,9 @@ namespace fr.epsi.group.multitech.dataAccess
     
     public partial class UtilisateurJeuxSupport
     {
-        public int UtilisateurID { get; set; }
-        public int JeuxID { get; set; }
-        public int SupportJeuxID { get; set; }
+        public int utilisateurID { get; set; }
+        public int jeuxID { get; set; }
+        public int supportJeuxID { get; set; }
     
         public virtual Jeux Jeux { get; set; }
         public virtual Supportjeux Supportjeux { get; set; }

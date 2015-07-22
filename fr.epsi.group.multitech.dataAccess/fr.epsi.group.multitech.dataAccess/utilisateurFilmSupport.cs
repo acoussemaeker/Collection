@@ -12,11 +12,11 @@ namespace fr.epsi.group.multitech.dataAccess
     using System;
     using System.Collections.Generic;
     
-    public partial class utilisateurFilmSupport
+    public partial class UtilisateurFilmSupport
     {
         public int utilisateurID { get; set; }
-        public int FilmID { get; set; }
-        public Nullable<int> SupportFilmID { get; set; }
+        public int filmID { get; set; }
+        public Nullable<int> supportFilmID { get; set; }
     
         public virtual Film Film { get; set; }
         public virtual Supportfilm Supportfilm { get; set; }

@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -50,54 +53,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CollectionModel.Context.cs">
+    <Compile Include="Collection.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CollectionModel.Context.tt</DependentUpon>
+      <DependentUpon>Collection.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="CollectionModel.cs">
+    <Compile Include="Collection.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
-    <Compile Include="CollectionModel.Designer.cs">
+    <Compile Include="Collection.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CollectionModel.edmx</DependentUpon>
+      <DependentUpon>Collection.edmx</DependentUpon>
     </Compile>
     <Compile Include="Film.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="GenreFilm.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="GenreJeux.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="GenreLivre.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="Jeux.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="Livre.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositories\FilmRepository.cs" />
     <Compile Include="repositories\GenreFilm.cs" />
     <Compile Include="repositories\GenreJeux.cs" />
     <Compile Include="repositories\GenreLivre.cs" />
-    <Compile Include="repositories\IFilmRepository.cs" />
-    <Compile Include="repositories\IGenreFilm.cs" />
-    <Compile Include="repositories\IGenreJeux.cs" />
-    <Compile Include="repositories\IGenreLivre.cs" />
-    <Compile Include="repositories\IJeuxRepository.cs" />
-    <Compile Include="repositories\ILivreRepository.cs" />
-    <Compile Include="repositories\ISupportFilmRepository.cs" />
-    <Compile Include="repositories\ISupportJeuxRepository.cs" />
-    <Compile Include="repositories\ISupportLivreRepository.cs" />
-    <Compile Include="repositories\IUtilisateurRepository.cs" />
     <Compile Include="repositories\JeuxRepository.cs" />
     <Compile Include="repositories\LivreRepository.cs" />
     <Compile Include="repositories\SupportFilmRepository.cs" />
@@ -105,46 +98,45 @@
     <Compile Include="repositories\SupportLivreRepository.cs" />
     <Compile Include="repositories\UtilisateurRepository.cs" />
     <Compile Include="Supportfilm.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="Supportjeux.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="Supportlivre.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="Utilisateur.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
-    <Compile Include="utilisateurFilmSupport.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+    <Compile Include="UtilisateurFilmSupport.cs">
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="UtilisateurJeuxSupport.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
     <Compile Include="UtilisateurLivreSupport.cs">
-      <DependentUpon>CollectionModel.tt</DependentUpon>
+      <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="ClassDiagram1.cd" />
-    <EntityDeploy Include="CollectionModel.edmx">
+    <EntityDeploy Include="Collection.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CollectionModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>Collection.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="CollectionModel.Context.tt">
+    <None Include="Collection.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CollectionModel.edmx</DependentUpon>
-      <LastGenOutput>CollectionModel.Context.cs</LastGenOutput>
+      <DependentUpon>Collection.edmx</DependentUpon>
+      <LastGenOutput>Collection.Context.cs</LastGenOutput>
     </None>
-    <None Include="CollectionModel.edmx.diagram">
-      <DependentUpon>CollectionModel.edmx</DependentUpon>
+    <None Include="Collection.edmx.diagram">
+      <DependentUpon>Collection.edmx</DependentUpon>
     </None>
-    <None Include="CollectionModel.tt">
+    <None Include="Collection.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CollectionModel.edmx</DependentUpon>
-      <LastGenOutput>CollectionModel.cs</LastGenOutput>
+      <DependentUpon>Collection.edmx</DependentUpon>
+      <LastGenOutput>Collection.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

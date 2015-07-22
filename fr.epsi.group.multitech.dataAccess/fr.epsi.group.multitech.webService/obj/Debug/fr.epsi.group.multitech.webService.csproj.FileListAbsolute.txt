@@ -1,0 +1,6 @@
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.webService\bin\Debug\fr.epsi.group.multitech.webService.exe.config
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.webService\bin\Debug\fr.epsi.group.multitech.webService.exe
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.webService\bin\Debug\fr.epsi.group.multitech.webService.pdb
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.webService\obj\Debug\fr.epsi.group.multitech.webService.csprojResolveAssemblyReference.cache
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.webService\obj\Debug\fr.epsi.group.multitech.webService.exe
+D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.webService\obj\Debug\fr.epsi.group.multitech.webService.pdb

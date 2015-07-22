@@ -22,9 +22,9 @@ namespace fr.epsi.group.multitech.dataAccess
         public int id { get; set; }
         public string nom { get; set; }
         public string description { get; set; }
-        public System.DateTime Date_sortie { get; set; }
-        public string Editeur { get; set; }
-        public int id_genre { get; set; }
+        public System.DateTime dateSortie { get; set; }
+        public string editeur { get; set; }
+        public int idGenre { get; set; }
     
         public virtual GenreJeux GenreJeux { get; set; }
         public virtual ICollection<UtilisateurJeuxSupport> UtilisateurJeuxSupport { get; set; }

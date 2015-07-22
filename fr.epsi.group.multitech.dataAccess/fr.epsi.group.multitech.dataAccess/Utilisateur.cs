@@ -16,7 +16,7 @@ namespace fr.epsi.group.multitech.dataAccess
     {
         public Utilisateur()
         {
-            this.utilisateurFilmSupport = new HashSet<utilisateurFilmSupport>();
+            this.UtilisateurFilmSupport = new HashSet<UtilisateurFilmSupport>();
             this.UtilisateurJeuxSupport = new HashSet<UtilisateurJeuxSupport>();
             this.UtilisateurLivreSupport = new HashSet<UtilisateurLivreSupport>();
         }
@@ -27,10 +27,10 @@ namespace fr.epsi.group.multitech.dataAccess
         public string nom { get; set; }
         public string prenom { get; set; }
         public string adresse { get; set; }
-        public decimal codepostal { get; set; }
+        public decimal codePostal { get; set; }
         public string ville { get; set; }
     
-        public virtual ICollection<utilisateurFilmSupport> utilisateurFilmSupport { get; set; }
+        public virtual ICollection<UtilisateurFilmSupport> UtilisateurFilmSupport { get; set; }
         public virtual ICollection<UtilisateurJeuxSupport> UtilisateurJeuxSupport { get; set; }
         public virtual ICollection<UtilisateurLivreSupport> UtilisateurLivreSupport { get; set; }
     }

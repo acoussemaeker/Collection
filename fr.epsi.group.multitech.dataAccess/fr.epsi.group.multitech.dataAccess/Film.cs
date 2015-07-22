@@ -16,18 +16,18 @@ namespace fr.epsi.group.multitech.dataAccess
     {
         public Film()
         {
-            this.utilisateurFilmSupport = new HashSet<utilisateurFilmSupport>();
+            this.UtilisateurFilmSupport = new HashSet<UtilisateurFilmSupport>();
         }
     
         public int id { get; set; }
         public string nom { get; set; }
         public string description { get; set; }
         public string realisateur { get; set; }
-        public System.DateTime Date_sortie { get; set; }
-        public string Pays_origin { get; set; }
-        public int id_genre { get; set; }
+        public System.DateTime dateSortie { get; set; }
+        public string paysOrigine { get; set; }
+        public int idGenre { get; set; }
     
         public virtual GenreFilm GenreFilm { get; set; }
-        public virtual ICollection<utilisateurFilmSupport> utilisateurFilmSupport { get; set; }
+        public virtual ICollection<UtilisateurFilmSupport> UtilisateurFilmSupport { get; set; }
     }
 }

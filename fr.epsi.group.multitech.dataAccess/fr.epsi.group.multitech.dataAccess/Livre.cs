@@ -24,9 +24,9 @@ namespace fr.epsi.group.multitech.dataAccess
         public string description { get; set; }
         public string auteur { get; set; }
         public string editeur { get; set; }
-        public System.DateTime premiere_parrution { get; set; }
+        public System.DateTime premiereParrution { get; set; }
         public int nbpage { get; set; }
-        public int id_genre { get; set; }
+        public int idGenre { get; set; }
     
         public virtual GenreLivre GenreLivre { get; set; }
         public virtual ICollection<UtilisateurLivreSupport> UtilisateurLivreSupport { get; set; }

@@ -31,8 +31,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>fr.epsi.group.multitech.business.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,14 +51,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="business\Film.cs" />
-    <Compile Include="business\Jeux.cs" />
-    <Compile Include="business\Livre.cs" />
+    <Compile Include="business\FilmBU.cs" />
+    <Compile Include="business\GenreFilmBU.cs" />
+    <Compile Include="business\GenreJeuxBU.cs" />
+    <Compile Include="business\GenreLivreBU.cs" />
+    <Compile Include="business\JeuxBU.cs" />
+    <Compile Include="business\LivreBU.cs" />
+    <Compile Include="business\SupportFilmBU.cs" />
+    <Compile Include="business\SupportJeuxBU.cs" />
+    <Compile Include="business\SupportLivreBU.cs" />
+    <Compile Include="business\UtilisateurBU.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess.csproj">
+      <Project>{e9ab96e6-d39e-47fe-aeac-859f660814c5}</Project>
+      <Name>fr.epsi.group.multitech.dataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

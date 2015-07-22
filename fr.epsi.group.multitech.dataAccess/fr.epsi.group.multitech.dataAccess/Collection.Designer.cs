@@ -1,4 +1,4 @@
-﻿// La génération de code T4 est activée pour le modèle 'C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\CollectionModel.edmx'. 
+﻿// La génération de code T4 est activée pour le modèle 'D:\Git\Collection\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.dataAccess\Collection.edmx'. 
 // Pour activer la génération de code héritée, définissez la valeur de la propriété
 // du concepteur 'Stratégie de génération de code' sur 'ObjectContext hérité'. Cette propriété est disponible dans la fenêtre Propriétés lorsque le modèle
 //  est ouvert dans le concepteur.

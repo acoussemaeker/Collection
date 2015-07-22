@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace fr.epsi.group.multitech.dataAccess.repositories
 {
-    class SupportfilmRepository  : ISupportFilmRepository, IDisposable
+    class SupportfilmRepository  :  IDisposable
     {
        private CollectionEntities context;
         private bool disposed = false;

@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CollectionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Film">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="ntext" Nullable="false" />
+    <Property Name="realisateur" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="dateSortie" Type="date" Nullable="false" />
+    <Property Name="paysOrigine" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="idGenre" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GenreFilm">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GenreJeux">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GenreLivre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Jeux">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="ntext" Nullable="false" />
+    <Property Name="dateSortie" Type="date" Nullable="false" />
+    <Property Name="editeur" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="idGenre" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Livre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="ntext" Nullable="false" />
+    <Property Name="auteur" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="editeur" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="premiereParrution" Type="date" Nullable="false" />
+    <Property Name="nbpage" Type="int" Nullable="false" />
+    <Property Name="idGenre" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supportfilm">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supportjeux">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supportlivre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Utilisateur">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="mail" Type="ntext" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="prenom" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="adresse" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="codePostal" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ville" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'Collection.dbo.UtilisateurFilmSupport' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="UtilisateurFilmSupport">
+    <Key>
+      <PropertyRef Name="utilisateurID" />
+      <PropertyRef Name="filmID" />
+    </Key>
+    <Property Name="utilisateurID" Type="int" Nullable="false" />
+    <Property Name="filmID" Type="int" Nullable="false" />
+    <Property Name="supportFilmID" Type="int" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'Collection.dbo.UtilisateurJeuxSupport' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="UtilisateurJeuxSupport">
+    <Key>
+      <PropertyRef Name="utilisateurID" />
+      <PropertyRef Name="jeuxID" />
+      <PropertyRef Name="supportJeuxID" />
+    </Key>
+    <Property Name="utilisateurID" Type="int" Nullable="false" />
+    <Property Name="jeuxID" Type="int" Nullable="false" />
+    <Property Name="supportJeuxID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'Collection.dbo.UtilisateurLivreSupport' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="UtilisateurLivreSupport">
+    <Key>
+      <PropertyRef Name="utilisateurID" />
+      <PropertyRef Name="livreID" />
+      <PropertyRef Name="supportLivreID" />
+    </Key>
+    <Property Name="utilisateurID" Type="int" Nullable="false" />
+    <Property Name="livreID" Type="int" Nullable="false" />
+    <Property Name="supportLivreID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Film_Genre_film">
+    <End Role="GenreFilm" Type="Self.GenreFilm" Multiplicity="1" />
+    <End Role="Film" Type="Self.Film" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenreFilm">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Film">
+        <PropertyRef Name="idGenre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Jeux_Genre_jeux">
+    <End Role="GenreJeux" Type="Self.GenreJeux" Multiplicity="1" />
+    <End Role="Jeux" Type="Self.Jeux" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenreJeux">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Jeux">
+        <PropertyRef Name="idGenre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Livre_Genre_livre">
+    <End Role="GenreLivre" Type="Self.GenreLivre" Multiplicity="1" />
+    <End Role="Livre" Type="Self.Livre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GenreLivre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Livre">
+        <PropertyRef Name="idGenre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_utilisateurFilmSupport_Film">
+    <End Role="Film" Type="Self.Film" Multiplicity="1" />
+    <End Role="UtilisateurFilmSupport" Type="Self.UtilisateurFilmSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Film">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurFilmSupport">
+        <PropertyRef Name="filmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_utilisateurFilmSupport_Support_film">
+    <End Role="Supportfilm" Type="Self.Supportfilm" Multiplicity="0..1" />
+    <End Role="UtilisateurFilmSupport" Type="Self.UtilisateurFilmSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supportfilm">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurFilmSupport">
+        <PropertyRef Name="supportFilmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_utilisateurFilmSupport_Utilisateur">
+    <End Role="Utilisateur" Type="Self.Utilisateur" Multiplicity="1" />
+    <End Role="UtilisateurFilmSupport" Type="Self.UtilisateurFilmSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurFilmSupport">
+        <PropertyRef Name="utilisateurID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UtilisateurJeuxSupport_Jeux">
+    <End Role="Jeux" Type="Self.Jeux" Multiplicity="1" />
+    <End Role="UtilisateurJeuxSupport" Type="Self.UtilisateurJeuxSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jeux">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurJeuxSupport">
+        <PropertyRef Name="jeuxID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UtilisateurJeuxSupport_Support_jeux">
+    <End Role="Supportjeux" Type="Self.Supportjeux" Multiplicity="1" />
+    <End Role="UtilisateurJeuxSupport" Type="Self.UtilisateurJeuxSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supportjeux">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurJeuxSupport">
+        <PropertyRef Name="supportJeuxID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UtilisateurJeuxSupport_Utilisateur">
+    <End Role="Utilisateur" Type="Self.Utilisateur" Multiplicity="1" />
+    <End Role="UtilisateurJeuxSupport" Type="Self.UtilisateurJeuxSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurJeuxSupport">
+        <PropertyRef Name="utilisateurID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UtilisateurLivreSupport_Livre">
+    <End Role="Livre" Type="Self.Livre" Multiplicity="1" />
+    <End Role="UtilisateurLivreSupport" Type="Self.UtilisateurLivreSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Livre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurLivreSupport">
+        <PropertyRef Name="livreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UtilisateurLivreSupport_Support_livre">
+    <End Role="Supportlivre" Type="Self.Supportlivre" Multiplicity="1" />
+    <End Role="UtilisateurLivreSupport" Type="Self.UtilisateurLivreSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supportlivre">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurLivreSupport">
+        <PropertyRef Name="supportLivreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UtilisateurLivreSupport_Utilisateur">
+    <End Role="Utilisateur" Type="Self.Utilisateur" Multiplicity="1" />
+    <End Role="UtilisateurLivreSupport" Type="Self.UtilisateurLivreSupport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateur">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="UtilisateurLivreSupport">
+        <PropertyRef Name="utilisateurID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CollectionModelStoreContainer">
+    <EntitySet Name="Film" EntityType="Self.Film" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GenreFilm" EntityType="Self.GenreFilm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GenreJeux" EntityType="Self.GenreJeux" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GenreLivre" EntityType="Self.GenreLivre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Jeux" EntityType="Self.Jeux" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Livre" EntityType="Self.Livre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supportfilm" EntityType="Self.Supportfilm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supportjeux" EntityType="Self.Supportjeux" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supportlivre" EntityType="Self.Supportlivre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Utilisateur" EntityType="Self.Utilisateur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UtilisateurFilmSupport" EntityType="Self.UtilisateurFilmSupport" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UtilisateurFilmSupport].[utilisateurID] AS [utilisateurID], 
+    [UtilisateurFilmSupport].[filmID] AS [filmID], 
+    [UtilisateurFilmSupport].[supportFilmID] AS [supportFilmID]
+    FROM [dbo].[UtilisateurFilmSupport] AS [UtilisateurFilmSupport]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UtilisateurJeuxSupport" EntityType="Self.UtilisateurJeuxSupport" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UtilisateurJeuxSupport].[utilisateurID] AS [utilisateurID], 
+    [UtilisateurJeuxSupport].[jeuxID] AS [jeuxID], 
+    [UtilisateurJeuxSupport].[supportJeuxID] AS [supportJeuxID]
+    FROM [dbo].[UtilisateurJeuxSupport] AS [UtilisateurJeuxSupport]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UtilisateurLivreSupport" EntityType="Self.UtilisateurLivreSupport" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UtilisateurLivreSupport].[utilisateurID] AS [utilisateurID], 
+    [UtilisateurLivreSupport].[livreID] AS [livreID], 
+    [UtilisateurLivreSupport].[supportLivreID] AS [supportLivreID]
+    FROM [dbo].[UtilisateurLivreSupport] AS [UtilisateurLivreSupport]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Film_Genre_film" Association="Self.FK_Film_Genre_film">
+      <End Role="GenreFilm" EntitySet="GenreFilm" />
+      <End Role="Film" EntitySet="Film" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Jeux_Genre_jeux" Association="Self.FK_Jeux_Genre_jeux">
+      <End Role="GenreJeux" EntitySet="GenreJeux" />
+      <End Role="Jeux" EntitySet="Jeux" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Livre_Genre_livre" Association="Self.FK_Livre_Genre_livre">
+      <End Role="GenreLivre" EntitySet="GenreLivre" />
+      <End Role="Livre" EntitySet="Livre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_utilisateurFilmSupport_Film" Association="Self.FK_utilisateurFilmSupport_Film">
+      <End Role="Film" EntitySet="Film" />
+      <End Role="UtilisateurFilmSupport" EntitySet="UtilisateurFilmSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_utilisateurFilmSupport_Support_film" Association="Self.FK_utilisateurFilmSupport_Support_film">
+      <End Role="Supportfilm" EntitySet="Supportfilm" />
+      <End Role="UtilisateurFilmSupport" EntitySet="UtilisateurFilmSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_utilisateurFilmSupport_Utilisateur" Association="Self.FK_utilisateurFilmSupport_Utilisateur">
+      <End Role="Utilisateur" EntitySet="Utilisateur" />
+      <End Role="UtilisateurFilmSupport" EntitySet="UtilisateurFilmSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UtilisateurJeuxSupport_Jeux" Association="Self.FK_UtilisateurJeuxSupport_Jeux">
+      <End Role="Jeux" EntitySet="Jeux" />
+      <End Role="UtilisateurJeuxSupport" EntitySet="UtilisateurJeuxSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UtilisateurJeuxSupport_Support_jeux" Association="Self.FK_UtilisateurJeuxSupport_Support_jeux">
+      <End Role="Supportjeux" EntitySet="Supportjeux" />
+      <End Role="UtilisateurJeuxSupport" EntitySet="UtilisateurJeuxSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UtilisateurJeuxSupport_Utilisateur" Association="Self.FK_UtilisateurJeuxSupport_Utilisateur">
+      <End Role="Utilisateur" EntitySet="Utilisateur" />
+      <End Role="UtilisateurJeuxSupport" EntitySet="UtilisateurJeuxSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UtilisateurLivreSupport_Livre" Association="Self.FK_UtilisateurLivreSupport_Livre">
+      <End Role="Livre" EntitySet="Livre" />
+      <End Role="UtilisateurLivreSupport" EntitySet="UtilisateurLivreSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UtilisateurLivreSupport_Support_livre" Association="Self.FK_UtilisateurLivreSupport_Support_livre">
+      <End Role="Supportlivre" EntitySet="Supportlivre" />
+      <End Role="UtilisateurLivreSupport" EntitySet="UtilisateurLivreSupport" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UtilisateurLivreSupport_Utilisateur" Association="Self.FK_UtilisateurLivreSupport_Utilisateur">
+      <End Role="Utilisateur" EntitySet="Utilisateur" />
+      <End Role="UtilisateurLivreSupport" EntitySet="UtilisateurLivreSupport" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
