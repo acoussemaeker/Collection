@@ -1,1 +1,0 @@
-C:\Users\antlel\Documents\Visual Studio 2013\Projects\fr.epsi.group.multitech.dataAccess\fr.epsi.group.multitech.DataAccessTest\obj\Debug\fr.epsi.group.multitech.DataAccessTest.csprojResolveAssemblyReference.cache

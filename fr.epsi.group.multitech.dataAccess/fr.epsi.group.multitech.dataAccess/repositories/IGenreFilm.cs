@@ -9,7 +9,7 @@ namespace fr.epsi.group.multitech.dataAccess.repositories
     interface IGenreFilm : IDisposable
     {
         IEnumerable<GenreFilm> GetGenreFilm();
-        Film GetGenreFilmByID(int GenreFilmId);
+        Jeux GetGenreFilmByID(int GenreFilmId);
         void InsertGenreFilm(GenreFilm genreFilm);
         void DeleteGenreFilm(int genreFilmId);
         void UpdateGenreFilm(GenreFilm genreFilm);
