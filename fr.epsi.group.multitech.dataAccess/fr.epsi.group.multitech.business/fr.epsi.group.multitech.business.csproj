@@ -61,6 +61,9 @@
     <Compile Include="business\SupportJeuxBU.cs" />
     <Compile Include="business\SupportLivreBU.cs" />
     <Compile Include="business\UtilisateurBU.cs" />
+    <Compile Include="business\UtilisateurFilmSupportBU.cs" />
+    <Compile Include="business\UtilisateurJeuxSupportBU.cs" />
+    <Compile Include="business\UtilisateurLivreSupportBU.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

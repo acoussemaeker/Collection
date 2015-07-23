@@ -96,7 +96,10 @@
     <Compile Include="repositories\SupportFilmRepository.cs" />
     <Compile Include="repositories\SupportJeuxRepository.cs" />
     <Compile Include="repositories\SupportLivreRepository.cs" />
+    <Compile Include="repositories\UtilisateurJeuxSupportRepository.cs" />
+    <Compile Include="repositories\UtilisateurLivreSupportRepository.cs" />
     <Compile Include="repositories\UtilisateurRepository.cs" />
+    <Compile Include="repositories\UtilisateurFilmSupportRepository.cs" />
     <Compile Include="Supportfilm.cs">
       <DependentUpon>Collection.tt</DependentUpon>
     </Compile>
