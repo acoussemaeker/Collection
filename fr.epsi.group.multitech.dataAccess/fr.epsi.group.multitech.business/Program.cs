@@ -65,9 +65,10 @@ namespace fr.epsi.group.multitech.business
             //context.Utilisateur.Find(1)
 
             //UtilisateurBU user = new UtilisateurBU(context.Utilisateur.Find(1));
-            //user.AddUtilisateurFilmSupportBU(1,1);
+            //user.AddUtilisateurFilmSupportBU(1, 1);
             //context.SaveChanges();
-
+            //user.updateUtilisateurFilmSupport(context.UtilisateurFilmSupport.Find(1), 2, 2);
+            //context.SaveChanges();
 
             FilmRepository _fr = new FilmRepository(context);
             

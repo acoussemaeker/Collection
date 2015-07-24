@@ -100,5 +100,29 @@ namespace fr.epsi.group.multitech.business.business
 
             return uls;
         }
+
+        public UtilisateurFilmSupport updateUtilisateurFilmSupport(UtilisateurFilmSupport ufs, int film, int support)
+        {
+            ufs.filmID = film;
+            ufs.supportFilmID = support;
+
+            return ufs;
+        }
+
+        public UtilisateurLivreSupport updateUtilisateurLivreSupport(UtilisateurLivreSupport uls, int livre, int support)
+        {
+            uls.livreID = livre;
+            uls.supportLivreID = support;
+
+            return uls;
+        }
+
+        public UtilisateurJeuxSupport updateUtilisateurJeuxSupport(UtilisateurJeuxSupport ujs, int jeux, int support)
+        {
+            ujs.jeuxID = jeux;
+            ujs.supportJeuxID = support;
+
+            return ujs;
+        }
     }
 }
