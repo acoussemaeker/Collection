@@ -1,25 +1,18 @@
 package fr.nicolasleucci.androiddev;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.GestureDetector;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 
 /**
  * Created by Nico on 18/06/2015.
@@ -62,6 +55,17 @@ public class FilmsActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(FilmsActivity.this, mAdapter.getItem(position), Toast.LENGTH_SHORT).show();
+                switch(position) {
+                    case 0:
+                        startActivity(new Intent(FilmsActivity.this, FilmsActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(FilmsActivity.this, JeuxActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(FilmsActivity.this, LivresActivity.class));
+                        break;
+                }
             }
         });
 
