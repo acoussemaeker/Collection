@@ -4,20 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b4c2e96ea06b49e5a62d77798094aca4" Name="Diagram1">
-        <EntityTypeShape EntityType="CollectionModel.Film" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.GenreFilm" Width="1.5" PointX="1.5" PointY="18.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.GenreJeux" Width="1.5" PointX="1.5" PointY="13.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.GenreLivre" Width="1.5" PointX="1.5" PointY="28.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.Jeux" Width="1.5" PointX="0.5" PointY="9.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.Livre" Width="1.5" PointX="0.75" PointY="23.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.Supportfilm" Width="1.5" PointX="0.75" PointY="21.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.Supportjeux" Width="1.5" PointX="0.75" PointY="15.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.Supportlivre" Width="1.5" PointX="0.75" PointY="31.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.Utilisateur" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.UtilisateurFilmSupport" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.UtilisateurJeuxSupport" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CollectionModel.UtilisateurLivreSupport" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+      <Diagram DiagramId="7ac769b47a944bb5b658dbf47db94717" Name="Diagram1">
+        <EntityTypeShape EntityType="CollectionModel.Film" Width="1.5" PointX="10.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.GenreFilm" Width="1.5" PointX="12.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.GenreJeux" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.GenreLivre" Width="1.5" PointX="10" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.Jeux" Width="1.5" PointX="2.25" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.Livre" Width="1.5" PointX="8" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.Supportfilm" Width="1.5" PointX="12.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.Supportjeux" Width="1.5" PointX="0.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.Supportlivre" Width="1.5" PointX="1.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.Utilisateur" Width="1.5" PointX="6.125" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.UtilisateurFilmSupport" Width="2" PointX="8.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.UtilisateurJeuxSupport" Width="1.875" PointX="4" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CollectionModel.UtilisateurLivreSupport" Width="2.125" PointX="3.375" PointY="4" IsExpanded="true" />
         <AssociationConnector Association="CollectionModel.FK_Film_Genre_film" ManuallyRouted="false" />
         <AssociationConnector Association="CollectionModel.FK_utilisateurFilmSupport_Film" ManuallyRouted="false" />
         <AssociationConnector Association="CollectionModel.FK_Jeux_Genre_jeux" ManuallyRouted="false" />

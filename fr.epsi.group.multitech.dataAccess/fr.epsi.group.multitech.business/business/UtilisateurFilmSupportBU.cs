@@ -11,21 +11,21 @@ namespace fr.epsi.group.multitech.business.business
     {
         int utilisateurId;
         int filmId;
-        int SupportId;
+        int SupportFilmId;
 
 
-        UtilisateurFilmSupportBU(UtilisateurFilmSupport utilisateurFilmSupport)
+        public UtilisateurFilmSupportBU(UtilisateurFilmSupport utilisateurFilmSupport)
         {
             this.utilisateurId = utilisateurFilmSupport.utilisateurID;
             this.filmId = utilisateurFilmSupport.filmID;
-            this.SupportId = utilisateurFilmSupport.supportFilmID;
+            this.SupportFilmId = utilisateurFilmSupport.supportFilmID;
         }
 
-        UtilisateurFilmSupportBU(int utilisateurID, int FilmId, int SupportId)
+        public UtilisateurFilmSupportBU(int utilisateurID, int FilmId, int SupportFilmId)
         {
             this.utilisateurId = utilisateurID;
             this.filmId = FilmId;
-            this.SupportId = SupportId;
+            this.SupportFilmId = SupportFilmId;
         }
 
         public UtilisateurFilmSupport GetModel()
@@ -34,7 +34,7 @@ namespace fr.epsi.group.multitech.business.business
 
             _result.utilisateurID = this.utilisateurId;
             _result.filmID = this.filmId;
-            _result.supportFilmID = this.SupportId;
+            _result.supportFilmID = this.SupportFilmId;
 
             return _result;
         }

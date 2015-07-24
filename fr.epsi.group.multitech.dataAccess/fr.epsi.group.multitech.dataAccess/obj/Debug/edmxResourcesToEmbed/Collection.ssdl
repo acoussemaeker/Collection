@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="description" Type="ntext" Nullable="false" />
     <Property Name="realisateur" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -16,28 +16,28 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="GenreJeux">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="GenreLivre">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Jeux">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="description" Type="ntext" Nullable="false" />
     <Property Name="dateSortie" Type="date" Nullable="false" />
@@ -48,7 +48,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="description" Type="ntext" Nullable="false" />
     <Property Name="auteur" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -61,28 +61,28 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Supportjeux">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Supportlivre">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="Utilisateur">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="mail" Type="ntext" Nullable="false" />
     <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -98,7 +98,7 @@ avertissement 6002: La table/vue 'Collection.dbo.UtilisateurFilmSupport' n'a pas
       <PropertyRef Name="utilisateurID" />
       <PropertyRef Name="filmID" />
     </Key>
-    <Property Name="utilisateurID" Type="int" Nullable="false" />
+    <Property Name="utilisateurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="filmID" Type="int" Nullable="false" />
     <Property Name="supportFilmID" Type="int" />
   </EntityType>
@@ -110,7 +110,7 @@ avertissement 6002: La table/vue 'Collection.dbo.UtilisateurJeuxSupport' n'a pas
       <PropertyRef Name="jeuxID" />
       <PropertyRef Name="supportJeuxID" />
     </Key>
-    <Property Name="utilisateurID" Type="int" Nullable="false" />
+    <Property Name="utilisateurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="jeuxID" Type="int" Nullable="false" />
     <Property Name="supportJeuxID" Type="int" Nullable="false" />
   </EntityType>
@@ -122,7 +122,7 @@ avertissement 6002: La table/vue 'Collection.dbo.UtilisateurLivreSupport' n'a pa
       <PropertyRef Name="livreID" />
       <PropertyRef Name="supportLivreID" />
     </Key>
-    <Property Name="utilisateurID" Type="int" Nullable="false" />
+    <Property Name="utilisateurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="livreID" Type="int" Nullable="false" />
     <Property Name="supportLivreID" Type="int" Nullable="false" />
   </EntityType>

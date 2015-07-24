@@ -17,9 +17,10 @@ namespace fr.epsi.group.multitech.dataAccess
         public int utilisateurID { get; set; }
         public int livreID { get; set; }
         public int supportLivreID { get; set; }
-    
+
+        public virtual Utilisateur Utilisateur { get; set; }
         public virtual Livre Livre { get; set; }
         public virtual Supportlivre Supportlivre { get; set; }
-        public virtual Utilisateur Utilisateur { get; set; }
+        
     }
 }

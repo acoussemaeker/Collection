@@ -17,9 +17,10 @@ namespace fr.epsi.group.multitech.dataAccess
         public int utilisateurID { get; set; }
         public int jeuxID { get; set; }
         public int supportJeuxID { get; set; }
-    
+
+        public virtual Utilisateur Utilisateur { get; set; }
         public virtual Jeux Jeux { get; set; }
         public virtual Supportjeux Supportjeux { get; set; }
-        public virtual Utilisateur Utilisateur { get; set; }
+        
     }
 }

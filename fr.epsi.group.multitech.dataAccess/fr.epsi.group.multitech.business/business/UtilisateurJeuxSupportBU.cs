@@ -14,14 +14,14 @@ namespace fr.epsi.group.multitech.business.business
         int SupportId;
 
 
-        UtilisateurJeuxSupportBU(UtilisateurJeuxSupport utilisateurJeuxSupport)
+        public UtilisateurJeuxSupportBU(UtilisateurJeuxSupport utilisateurJeuxSupport)
         {
             this.utilisateurId = utilisateurJeuxSupport.utilisateurID;
             this.jeuxId = utilisateurJeuxSupport.jeuxID;
             this.SupportId = utilisateurJeuxSupport.supportJeuxID;
         }
 
-        UtilisateurJeuxSupportBU(int utilisateurID, int JeuxId, int SupportId)
+        public UtilisateurJeuxSupportBU(int utilisateurID, int JeuxId, int SupportId)
         {
             this.utilisateurId = utilisateurID;
             this.jeuxId = JeuxId;

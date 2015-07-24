@@ -14,14 +14,14 @@ namespace fr.epsi.group.multitech.business.business
         int SupportId;
 
 
-        UtilisateurLivreSupportBU(UtilisateurLivreSupport utilisateurLivreSupport)
+        public UtilisateurLivreSupportBU(UtilisateurLivreSupport utilisateurLivreSupport)
         {
             this.utilisateurId = utilisateurLivreSupport.utilisateurID;
             this.livreId = utilisateurLivreSupport.livreID;
             this.SupportId = utilisateurLivreSupport.supportLivreID;
         }
 
-        UtilisateurLivreSupportBU(int utilisateurID, int LivreId, int SupportId)
+        public UtilisateurLivreSupportBU(int utilisateurID, int LivreId, int SupportId)
         {
             this.utilisateurId = utilisateurID;
             this.livreId = LivreId;
