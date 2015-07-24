@@ -55,5 +55,15 @@ namespace fr.epsi.group.multitech.business.business
 
             return _result;
         }
+
+        public UtilisateurFilmSupport AddUtilisateurFilmSupportBU(int film, int support)
+        {
+            UtilisateurFilmSupport ufs = new UtilisateurFilmSupport();
+            ufs.utilisateurID = this.id;
+            ufs.filmID = film;
+            ufs.supportFilmID = support;
+
+            return ufs;
+        }
     }
 }

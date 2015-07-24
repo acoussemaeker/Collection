@@ -9,6 +9,7 @@ namespace fr.epsi.group.multitech.business.business
 {
     class UtilisateurFilmSupportBU
     {
+        int id;
         int utilisateurId;
         int filmId;
         int SupportFilmId;

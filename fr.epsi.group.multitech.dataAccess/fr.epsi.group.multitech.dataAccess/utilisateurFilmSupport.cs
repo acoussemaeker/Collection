@@ -14,13 +14,13 @@ namespace fr.epsi.group.multitech.dataAccess
     
     public partial class UtilisateurFilmSupport
     {
+        public int id { get; set; }
         public int utilisateurID { get; set; }
         public int filmID { get; set; }
         public int supportFilmID { get; set; }
-
-        public virtual Utilisateur Utilisateur { get; set; }
+    
         public virtual Film Film { get; set; }
         public virtual Supportfilm Supportfilm { get; set; }
-        
+        public virtual Utilisateur Utilisateur { get; set; }
     }
 }

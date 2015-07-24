@@ -108,23 +108,22 @@
   </EntityType>
   <EntityType Name="UtilisateurFilmSupport">
     <Key>
-      <PropertyRef Name="utilisateurID" />
-      <PropertyRef Name="filmID" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="utilisateurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="utilisateurID" Type="Int32" Nullable="false" />
     <Property Name="filmID" Type="Int32" Nullable="false" />
-    <Property Name="supportFilmID" Type="Int32" />
+    <Property Name="supportFilmID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Film" Relationship="Self.FK_utilisateurFilmSupport_Film" FromRole="UtilisateurFilmSupport" ToRole="Film" />
     <NavigationProperty Name="Supportfilm" Relationship="Self.FK_utilisateurFilmSupport_Support_film" FromRole="UtilisateurFilmSupport" ToRole="Supportfilm" />
     <NavigationProperty Name="Utilisateur" Relationship="Self.FK_utilisateurFilmSupport_Utilisateur" FromRole="UtilisateurFilmSupport" ToRole="Utilisateur" />
   </EntityType>
   <EntityType Name="UtilisateurJeuxSupport">
     <Key>
-      <PropertyRef Name="utilisateurID" />
-      <PropertyRef Name="jeuxID" />
-      <PropertyRef Name="supportJeuxID" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="utilisateurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="utilisateurID" Type="Int32" Nullable="false" />
     <Property Name="jeuxID" Type="Int32" Nullable="false" />
     <Property Name="supportJeuxID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Jeux" Relationship="Self.FK_UtilisateurJeuxSupport_Jeux" FromRole="UtilisateurJeuxSupport" ToRole="Jeux" />
@@ -133,11 +132,10 @@
   </EntityType>
   <EntityType Name="UtilisateurLivreSupport">
     <Key>
-      <PropertyRef Name="utilisateurID" />
-      <PropertyRef Name="livreID" />
-      <PropertyRef Name="supportLivreID" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="utilisateurID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="utilisateurID" Type="Int32" Nullable="false" />
     <Property Name="livreID" Type="Int32" Nullable="false" />
     <Property Name="supportLivreID" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Livre" Relationship="Self.FK_UtilisateurLivreSupport_Livre" FromRole="UtilisateurLivreSupport" ToRole="Livre" />
@@ -217,7 +215,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_utilisateurFilmSupport_Support_film">
-    <End Role="Supportfilm" Type="Self.Supportfilm" Multiplicity="0..1" />
+    <End Role="Supportfilm" Type="Self.Supportfilm" Multiplicity="1" />
     <End Role="UtilisateurFilmSupport" Type="Self.UtilisateurFilmSupport" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Supportfilm">

@@ -91,38 +91,30 @@
     <Property Name="codePostal" Type="numeric" Precision="18" Scale="0" Nullable="false" />
     <Property Name="ville" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
-  <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'Collection.dbo.UtilisateurFilmSupport' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
   <EntityType Name="UtilisateurFilmSupport">
     <Key>
-      <PropertyRef Name="utilisateurID" />
-      <PropertyRef Name="filmID" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="utilisateurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="utilisateurID" Type="int" Nullable="false" />
     <Property Name="filmID" Type="int" Nullable="false" />
-    <Property Name="supportFilmID" Type="int" />
+    <Property Name="supportFilmID" Type="int" Nullable="false" />
   </EntityType>
-  <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'Collection.dbo.UtilisateurJeuxSupport' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
   <EntityType Name="UtilisateurJeuxSupport">
     <Key>
-      <PropertyRef Name="utilisateurID" />
-      <PropertyRef Name="jeuxID" />
-      <PropertyRef Name="supportJeuxID" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="utilisateurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="utilisateurID" Type="int" Nullable="false" />
     <Property Name="jeuxID" Type="int" Nullable="false" />
     <Property Name="supportJeuxID" Type="int" Nullable="false" />
   </EntityType>
-  <!--Erreurs détectées durant la génération :
-avertissement 6002: La table/vue 'Collection.dbo.UtilisateurLivreSupport' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
   <EntityType Name="UtilisateurLivreSupport">
     <Key>
-      <PropertyRef Name="utilisateurID" />
-      <PropertyRef Name="livreID" />
-      <PropertyRef Name="supportLivreID" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="utilisateurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="utilisateurID" Type="int" Nullable="false" />
     <Property Name="livreID" Type="int" Nullable="false" />
     <Property Name="supportLivreID" Type="int" Nullable="false" />
   </EntityType>
@@ -175,7 +167,7 @@ avertissement 6002: La table/vue 'Collection.dbo.UtilisateurLivreSupport' n'a pa
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_utilisateurFilmSupport_Support_film">
-    <End Role="Supportfilm" Type="Self.Supportfilm" Multiplicity="0..1" />
+    <End Role="Supportfilm" Type="Self.Supportfilm" Multiplicity="1" />
     <End Role="UtilisateurFilmSupport" Type="Self.UtilisateurFilmSupport" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Supportfilm">
@@ -281,27 +273,9 @@ avertissement 6002: La table/vue 'Collection.dbo.UtilisateurLivreSupport' n'a pa
     <EntitySet Name="Supportjeux" EntityType="Self.Supportjeux" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Supportlivre" EntityType="Self.Supportlivre" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Utilisateur" EntityType="Self.Utilisateur" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="UtilisateurFilmSupport" EntityType="Self.UtilisateurFilmSupport" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [UtilisateurFilmSupport].[utilisateurID] AS [utilisateurID], 
-    [UtilisateurFilmSupport].[filmID] AS [filmID], 
-    [UtilisateurFilmSupport].[supportFilmID] AS [supportFilmID]
-    FROM [dbo].[UtilisateurFilmSupport] AS [UtilisateurFilmSupport]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="UtilisateurJeuxSupport" EntityType="Self.UtilisateurJeuxSupport" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [UtilisateurJeuxSupport].[utilisateurID] AS [utilisateurID], 
-    [UtilisateurJeuxSupport].[jeuxID] AS [jeuxID], 
-    [UtilisateurJeuxSupport].[supportJeuxID] AS [supportJeuxID]
-    FROM [dbo].[UtilisateurJeuxSupport] AS [UtilisateurJeuxSupport]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="UtilisateurLivreSupport" EntityType="Self.UtilisateurLivreSupport" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [UtilisateurLivreSupport].[utilisateurID] AS [utilisateurID], 
-    [UtilisateurLivreSupport].[livreID] AS [livreID], 
-    [UtilisateurLivreSupport].[supportLivreID] AS [supportLivreID]
-    FROM [dbo].[UtilisateurLivreSupport] AS [UtilisateurLivreSupport]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="UtilisateurFilmSupport" EntityType="Self.UtilisateurFilmSupport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UtilisateurJeuxSupport" EntityType="Self.UtilisateurJeuxSupport" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UtilisateurLivreSupport" EntityType="Self.UtilisateurLivreSupport" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Film_Genre_film" Association="Self.FK_Film_Genre_film">
       <End Role="GenreFilm" EntitySet="GenreFilm" />
       <End Role="Film" EntitySet="Film" />

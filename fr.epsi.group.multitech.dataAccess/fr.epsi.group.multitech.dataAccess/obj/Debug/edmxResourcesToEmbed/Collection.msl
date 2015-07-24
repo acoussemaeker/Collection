@@ -105,6 +105,7 @@
     <EntitySetMapping Name="UtilisateurFilmSupport">
       <EntityTypeMapping TypeName="CollectionModel.UtilisateurFilmSupport">
         <MappingFragment StoreEntitySet="UtilisateurFilmSupport">
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="utilisateurID" ColumnName="utilisateurID" />
           <ScalarProperty Name="filmID" ColumnName="filmID" />
           <ScalarProperty Name="supportFilmID" ColumnName="supportFilmID" />
@@ -114,6 +115,7 @@
     <EntitySetMapping Name="UtilisateurJeuxSupport">
       <EntityTypeMapping TypeName="CollectionModel.UtilisateurJeuxSupport">
         <MappingFragment StoreEntitySet="UtilisateurJeuxSupport">
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="utilisateurID" ColumnName="utilisateurID" />
           <ScalarProperty Name="jeuxID" ColumnName="jeuxID" />
           <ScalarProperty Name="supportJeuxID" ColumnName="supportJeuxID" />
@@ -123,6 +125,7 @@
     <EntitySetMapping Name="UtilisateurLivreSupport">
       <EntityTypeMapping TypeName="CollectionModel.UtilisateurLivreSupport">
         <MappingFragment StoreEntitySet="UtilisateurLivreSupport">
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="utilisateurID" ColumnName="utilisateurID" />
           <ScalarProperty Name="livreID" ColumnName="livreID" />
           <ScalarProperty Name="supportLivreID" ColumnName="supportLivreID" />
