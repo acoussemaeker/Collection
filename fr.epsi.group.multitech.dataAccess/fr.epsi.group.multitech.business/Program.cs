@@ -46,8 +46,8 @@ namespace fr.epsi.group.multitech.business
             //context.SaveChanges();
 
             //4
-            UtilisateurBU anthony = new UtilisateurBU("antlel@hotmail.fr", "anthony", "leloire", "anthony", "1 bis rue d'hinges", 62000, "Gonnehem");
-            //context.Utilisateur.Add(anthony.GetModel());
+            //UtilisateurBU anthony = new UtilisateurBU("antlel@hotmail.fr", "anthony", "leloire", "anthony", "1 bis rue d'hinges", 62000, "Gonnehem");
+            //Utilisateur _bddUser = context.Utilisateur.Add(anthony.GetModel());
             //context.SaveChanges();
 
             //5
@@ -59,10 +59,16 @@ namespace fr.epsi.group.multitech.business
             //context.UtilisateurJeuxSupport.Add(test.GetModel());
             //context.SaveChanges();
 
-            UtilisateurBU toto = new UtilisateurBU(anthony.GetModel());
-            toto.AddUtilisateurFilmSupportBU(1, 1);
-            context.UtilisateurFilmSupport.Add(toto.AddUtilisateurFilmSupportBU(1, 1));
-            context.SaveChanges();
+            //context.UtilisateurFilmSupport.Add(anthony.AddUtilisateurFilmSupportBU(1, 1));
+            //context.SaveChanges();
+
+            //context.Utilisateur.Find(1)
+
+            //UtilisateurBU user = new UtilisateurBU(context.Utilisateur.Find(1));
+            //user.AddUtilisateurFilmSupportBU(1,1);
+            //context.SaveChanges();
+
+
             FilmRepository _fr = new FilmRepository(context);
             
         }

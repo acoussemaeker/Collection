@@ -9,6 +9,7 @@ namespace fr.epsi.group.multitech.business.business
 {
     class UtilisateurBU
     {
+        bool connect = false;
         int id;
         string mail;
         string password;
@@ -38,6 +39,7 @@ namespace fr.epsi.group.multitech.business.business
             this.adresse = adresse;
             this.codePostal = codePostal;
             this.ville = ville;
+
         }
 
         public Utilisateur GetModel()
@@ -56,6 +58,19 @@ namespace fr.epsi.group.multitech.business.business
             return _result;
         }
 
+        public bool getconnect(UtilisateurBU user)
+        {
+            if (user.connect == false)
+                return false;
+            else
+                return true;
+        }
+
+        public void connection(UtilisateurBU user)
+        {
+            user.connect = true;
+        }
+
         public UtilisateurFilmSupport AddUtilisateurFilmSupportBU(int film, int support)
         {
             UtilisateurFilmSupport ufs = new UtilisateurFilmSupport();
@@ -64,6 +79,26 @@ namespace fr.epsi.group.multitech.business.business
             ufs.supportFilmID = support;
 
             return ufs;
+        }
+
+        public UtilisateurJeuxSupport AddUtilisateurJeuxSupportBU(int jeux, int support)
+        {
+            UtilisateurJeuxSupport ujs = new UtilisateurJeuxSupport();
+            ujs.utilisateurID = this.id;
+            ujs.jeuxID = jeux;
+            ujs.supportJeuxID = support;
+
+            return ujs;
+        }
+
+        public UtilisateurLivreSupport AddUtilisateurLivreSupportBU(int livre, int support)
+        {
+            UtilisateurLivreSupport uls = new UtilisateurLivreSupport();
+            uls.utilisateurID = this.id;
+            uls.livreID = livre;
+            uls.supportLivreID = support;
+
+            return uls;
         }
     }
 }
